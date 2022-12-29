@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: Monoton;
+  src: url("../fonts/Monoton/Monoton-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+  color: #797574;
+}
+
+body {
+  height: 100vh;
+  background-color: #1c2024;
+}
+
+/* header */
+
+header {
+  padding-inline: 3vw 8vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid#9d9f9f;
+}
+
+.logo {
+  font-family: Monoton;
+  font-size: 2rem;
+  margin-right: 2vw;
+}
+
+a {
+  color: #9d9f9f;
+  text-decoration: none;
+  margin-right: 1vh;
+}
+
+header nav {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 100px;
+}
+
+header nav a:hover,
+footer a i:hover {
+  color: #f4f7f8;
+}
+
+/* main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* aside */
+
+aside {
+  margin-left: 10vw;
+  width: 28vw;
+}
+
+h1 {
+  width: 25vw;
+  font-size: 4rem;
+  margin-bottom: 5vh;
+  color: #bcbdbe;
+}
+
+main aside p {
+  color: #ac8059;
+}
+
+main aside p::before {
+  content: "";
+  display: inline-block;
+  background-color: #ac8059;
+  margin: 6px 10px 6px 0;
+  width: 40px;
+  height: 1px;
+}
+
+/* pictures */
+main section {
+  position: relative;
+}
+
+main section img {
+  width: 18vw;
+  height: 75vh;
+  object-fit: cover;
+  position: relative;
+  top: 50px;
+  margin-left: 2vw;
+}
+
+.back,
+.forth {
+  border: 1px solid #ac8059;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100px;
+  right: 100px;
+}
+
+.back {
+  right: 170px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  left: 40px;
+  bottom: -70px;
+}
+
+i {
+  font-size: 1.2rem;
+  margin-right: 2vw;
+}
